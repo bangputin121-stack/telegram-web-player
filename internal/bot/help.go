@@ -162,7 +162,7 @@ func helpCallbackHandler(c *td.Client, cb *td.UpdateNewCallbackQuery) error {
 	if strings.Contains(data, "help_all") {
 		_ = cb.Answer(c, 0, false, "Opening help menu...", "")
 		response := fmt.Sprintf(
-			"<h3>Welcome, %s!</h3>\n"+
+			"<h3><tg-emoji emoji-id=\"5210956306952758910\">👀</tg-emoji> Welcome, %s!</h3>\n"+
 				"<p><b>%s</b> is a fast, reliable, and feature-rich Web Player music bot for Telegram.</p>\n\n"+
 				"<p><b>Supported platforms:</b> YouTube, Spotify, Apple Music, SoundCloud, Deezer, Twitch, and many more.</p>\n\n"+
 				"<p>Select a category below to browse the available commands.</p>",
